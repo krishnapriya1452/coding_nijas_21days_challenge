@@ -1,4 +1,4 @@
-# Data Type
+// Data Type
   
   int dataTypes(string type) {
 	if(type=="Integer") return 4;	
