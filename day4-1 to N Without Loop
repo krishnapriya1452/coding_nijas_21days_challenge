@@ -1,0 +1,12 @@
+// 1 to N Without Loop
+
+void fun(int i,vector<int> &arr){
+    if (i==0)return;
+    fun(i-1,arr);
+    arr.push_back(i);
+}
+vector<int> printNos(int x) {
+    vector<int>arr;
+    fun(x,arr);
+    return arr;
+}
