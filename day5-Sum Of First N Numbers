@@ -1,0 +1,5 @@
+// Sum Of First N Numbers
+
+int sumFirstN(int n) {
+    return n*(n+1)/2;
+}
