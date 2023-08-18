@@ -1,0 +1,13 @@
+// Check Armstrong
+
+bool checkArmstrong(int n){
+	int k =to_string(n).size();
+	int num=n;
+	int sum=0;
+	while(num>0){
+		int dig=num%10;
+		num/=10;
+		sum+=pow(dig,k);
+	}
+	return n==sum;
+}
