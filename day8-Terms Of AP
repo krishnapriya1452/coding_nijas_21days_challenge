@@ -1,0 +1,19 @@
+# Terms Of AP
+  
+from os import *
+from sys import *
+from collections import *
+from math import *
+
+def termsOfAP(x):
+    l=[]
+    count=0
+    i=1
+    while count<x:
+        if ((3*i)+2)% 4!=0:
+            l.append((3*i)+2)
+            i=i+1
+            count+=1 
+        else:
+            i+=1
+    return l
